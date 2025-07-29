@@ -373,6 +373,20 @@ const bills = [
     },
 ];
 
-// Start coding here
+const totalByLocation = (bills) => {
+    return bills.reduce((acc, bill) => {
+      const loc = bill.location;
+      const total = bill.total;
+      // ถ้ายังไม่มี key ของจังหวัดนี้ ให้ตั้งค่าเริ่มต้นเป็น 0
+      if (!acc[loc]) {
+        acc[loc] = 0;
+      }
+      // บวก total เข้าไปกับยอดสะสมของจังหวัดนั้น
+      acc[loc] += total;
+      return acc;
+    }, {});
+  };
+  
 
-const totalPaidByLocation;
+  console.log(totalByLocation(bills));
+
