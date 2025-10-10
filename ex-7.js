@@ -1,5 +1,10 @@
 function isPalindrome(string) {
   // Start coding here
+ const newSplitString = string.split('');
+ const newReversedString = newSplitString.reverse();
+ const newJoinString = newReversedString.join('');
+ return string.trim() === newJoinString;
+
 }
 
 //Example case
