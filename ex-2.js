@@ -382,4 +382,4 @@ function filterbills(bill) {
 
 const newBillsc = bills.filter(filterbills);
 console.log(newBillsc);
-debugger;
+
