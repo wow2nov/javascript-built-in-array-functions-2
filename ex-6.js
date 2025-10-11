@@ -2,6 +2,7 @@ const carCollection = ["toyota", "fiat", "honda", "bmw"];
 
 function updateCarCollection(carBrand) {
   // Start coding here
+  
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case

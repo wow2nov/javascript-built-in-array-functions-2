@@ -380,8 +380,5 @@ function filterbills(bill) {
   };
 };
 
-
- 
-
 const billMembers = bills.filter(filterbills).map(bill => bill.member.name);
 console.log(billMembers);
